@@ -1,0 +1,287 @@
+/********** VARIABLES **********/
+
+$main-color: #FB4F4F;
+$second-color: #2D7CAD;
+$text-color: #808080;
+$white-color: #ffffff;
+$bg-img: #eeeeee;
+$tablet: 768px;
+$desktop: 1024px;
+
+$redes:(
+    instagram: #DD7A9A,
+    facebook: #0672E6,
+    whatsapp: #00BFA5
+);
+
+/********** GENERALES **********/ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+    color: $main-color;
+}
+
+@for $i from 2 through 6 {
+    h#{$i} {color: $second-color;}
+}
+
+.descripcion {
+    color: $second-color;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+     color: $main-color;
+     text-decoration: none;
+}
+
+p {
+    color: $text-color;
+}
+
+.boton {
+    padding: 10px;
+    width: 100px;
+    background-color: $main-color;
+    border: none;
+    border-radius: 5px;
+    color: $white-color;
+    font-weight: 700;
+    font-size: 12px;
+    transition: ease-in .2s;
+}
+
+.boton:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/********** MIXIMS **********/
+
+@mixin padding-top-botoom($top, $bottom){
+    padding: $top $bottom;
+}
+
+/********** HEADER **********/
+
+/********** MENU MOBILE **********/
+
+.navbar {
+    background-color: $white-color!important;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    @media only screen and (min-width: $desktop){
+        width: 80%;
+    }
+    .navbar-brand {
+        @extend .flex-column;
+        .descripcion {
+            text-align: right;
+            font-size: 12.5px;
+            margin: 0;
+        }
+    }
+    .navbar-toggler {
+        @media only screen and (min-width: $desktop){
+            display: none;
+        }
+        i {
+            font-size: 25px;
+            color: $main-color;
+        }
+    }
+    ul {
+        li {
+            @extend .flex-column;
+            a {
+                @include padding-top-botoom(20px, 0);
+                font-size: 40px;
+                @extend .flex-column;
+                color: $main-color!important;
+                transition: transform 250ms;
+            }
+            a:hover {
+                @media only screen and (min-width: $desktop){
+                    opacity: 0.5;
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+    .menu-desktop {
+        display: none;
+        ul {
+            li {
+                @include padding-top-botoom(0, 10px);
+                a {
+                    font-size: 20px;
+                }
+            }
+        }
+        @media only screen and (min-width: $desktop){
+            display: block;
+            .navbar-nav {
+                display: flex;
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+/********** REDES **********/
+
+.redes {
+    padding: 110px 0 0 5px;
+    @media only screen and (min-width: $tablet){
+        display: flex;
+        justify-content: center;
+    }
+    ul {
+        li {
+            display: grid;
+            a {
+                justify-self: center;
+                transform: translateY(-2px);
+                i {
+                    font-size: 25px;
+                    color: $second-color;
+                }
+            }
+        }
+    }    
+}
+
+@each $red, $color in $redes {
+    .#{$red}:hover{
+        color: $color;
+        transform: translateY(0);
+        @media only screen and (min-width: $tablet){
+            transform: translateY(-1px);
+        }
+    }
+}
+
+/********** MAIN **********/
+
+.main {
+    @extend .flex-column;
+    .main__titulo {
+        padding: 10px;
+    }
+}
+
+/********** FOOTER **********/
+
+.footer {
+    img {
+        width: 15px;
+    }
+    p {
+        font-size: 12px;
+        padding-left: 5px;
+    }
+}
+
+/********** PRODUCTOS **********/
+
+.productos {
+    @extend .flex-column;
+    @media only screen and (min-width: $tablet){
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .producto {
+        margin: 0 0 5px 0 ;
+        @media only screen and (min-width: $tablet) {
+            margin: 0 2px 5px 2px;
+        }
+    }
+    .producto__imagen {
+        width: 100%;
+    }
+    .producto__detalle {
+        @include padding-top-botoom(10px, 20px);
+        margin: 5px 0;
+        @media only screen and (min-width: $tablet) {
+            margin: 3px;
+        }
+    }
+}
+
+/********** MI CUENTA **********/
+
+.compra {
+    @include padding-top-botoom(10px, 0);
+    margin: 3px 0;
+    @media only screen and (min-width: $tablet) {
+        margin: 0 0 5px 0;
+    }
+}
+
+/********** NOSOTROS **********/
+
+.nosotros {
+    @extend .flex-column;
+    height: 90vh;
+    @media only screen and (min-width: $desktop){
+        flex-direction: row;
+    }
+    img {
+        width: 100%;
+        @media only screen and (min-width: $desktop){
+            width: 60%;
+        }
+    }
+    .nosotrosDescripcion {
+        padding: 0 0 0 10px;
+        p {
+            font-size: 20px;
+            text-align: justify;
+        }
+    }
+}
+
+/********** CONTACTO **********/
+
+.contacto {
+    width: 100%;
+    @extend .flex-column;
+    fieldset {
+        @media only screen and (min-width: $tablet){
+            width: 60%;
+        }
+        legend {
+            color: $second-color;
+            font-size: 30px;
+        }
+    }
+}
+
+/********** 404 **********/
+
+.error-404 {
+    width: 400px;
+}
