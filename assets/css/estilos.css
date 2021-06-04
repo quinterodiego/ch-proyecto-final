@@ -14,6 +14,9 @@ h1 {
   font-size: 25px; }
 
 h2 {
+  font-size: 22px; }
+
+h2 {
   color: #2D7CAD; }
 
 h3 {
@@ -49,13 +52,11 @@ p {
   border-radius: 5px;
   color: #ffffff;
   font-weight: 700;
-  font-size: 12px;
-  transition: ease-in .2s; }
+  font-size: 12px; }
 
 .boton:hover {
   cursor: pointer;
-  opacity: 0.5;
-  transform: scale(1.1); }
+  opacity: 0.5; }
 
 .flex-column, .navbar ul li, .navbar ul li a, .main, .productos, .nosotros, .contacto {
   display: flex;
@@ -123,6 +124,8 @@ p {
     .navbar ul li a:hover {
       opacity: 0.5;
       transform: translateY(-2px); } }
+  .navbar .collapse ul li a:hover {
+    opacity: 0.5; }
   .navbar .menu-desktop {
     display: none; }
     .navbar .menu-desktop ul li {
@@ -156,13 +159,26 @@ p {
   .main .main__titulo {
     padding: 10px; }
 
-/********** FOOTER **********/
-.footer img {
-  width: 15px; }
+.main-vh-90 {
+  padding-top: 78px;
+  height: 90vh; }
 
-.footer p {
-  font-size: 12px;
-  padding-left: 5px; }
+/********** FOOTER **********/
+.footer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .footer .logo-footer img {
+    width: 22px; }
+  .footer .text-footer {
+    font-size: 12px;
+    padding-left: 5px;
+    margin-bottom: 0; }
+
+/********** INDEX **********/
+.carousel {
+  padding: 20px 0; }
 
 /********** PRODUCTOS **********/
 @media only screen and (min-width: 768px) {

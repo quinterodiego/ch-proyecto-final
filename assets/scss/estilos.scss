@@ -31,6 +31,10 @@ h1 {
     font-size: 25px;
 }
 
+h2 {
+    font-size: 22px;
+}
+
 @for $i from 2 through 6 {
     h#{$i} {color: $second-color;}
 }
@@ -61,13 +65,11 @@ p {
     color: $white-color;
     font-weight: 700;
     font-size: 12px;
-    transition: ease-in .2s;
 }
 
 .boton:hover {
     cursor: pointer;
     opacity: 0.5;
-    transform: scale(1.1);
 }
 
 .flex-column {
@@ -166,6 +168,15 @@ p {
             }
         }
     }
+    .collapse {
+        ul {
+            li {
+                a:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
     .menu-desktop {
         display: none;
         ul {
@@ -206,16 +217,32 @@ p {
     }
 }
 
+.main-vh-90 {
+    padding-top: 78px;
+    height: 90vh;
+}
+
 /********** FOOTER **********/
 
 .footer {
-    img {
-        width: 15px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo-footer img {
+        width: 22px;
     }
-    p {
+    .text-footer {
         font-size: 12px;
         padding-left: 5px;
+        margin-bottom: 0;
     }
+}
+
+/********** INDEX **********/
+
+.carousel {
+    padding: 20px 0;
 }
 
 /********** PRODUCTOS **********/
