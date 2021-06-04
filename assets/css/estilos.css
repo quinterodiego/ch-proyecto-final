@@ -9,7 +9,9 @@ body {
   font-family: 'Quicksand', sans-serif; }
 
 h1 {
-  color: #FB4F4F; }
+  color: #FB4F4F;
+  margin: 0;
+  font-size: 25px; }
 
 h2 {
   color: #2D7CAD; }
@@ -55,7 +57,7 @@ p {
   opacity: 0.5;
   transform: scale(1.1); }
 
-.flex-column, .navbar .navbar-brand, .navbar ul li, .navbar ul li a, .main, .productos, .nosotros, .contacto {
+.flex-column, .navbar ul li, .navbar ul li a, .main, .productos, .nosotros, .contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -68,15 +70,44 @@ p {
   background-color: #ffffff !important;
   padding: 10px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   margin: auto; }
   @media only screen and (min-width: 1024px) {
     .navbar {
       width: 80%; } }
-  .navbar .navbar-brand .descripcion {
-    text-align: right;
-    font-size: 12.5px;
-    margin: 0; }
+  .navbar .navbar-brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .navbar .navbar-brand .navbar_logo img {
+      width: 45px; }
+    .navbar .navbar-brand .navbar_brand--name {
+      display: flex;
+      flex-direction: column;
+      height: 45px; }
+      .navbar .navbar-brand .navbar_brand--name .descripcion {
+        text-align: right;
+        font-size: 10px;
+        margin: 0; }
+  .navbar .redes {
+    padding: 0;
+    width: 60px; }
+    @media only screen and (min-width: 768px) {
+      .navbar .redes {
+        display: flex;
+        justify-content: center; } }
+    .navbar .redes ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0; }
+      .navbar .redes ul li a {
+        justify-self: center;
+        transform: translateY(-2px); }
+        .navbar .redes ul li a i {
+          font-size: 30px;
+          color: #2D7CAD; }
   @media only screen and (min-width: 1024px) {
     .navbar .navbar-toggler {
       display: none; } }
@@ -105,34 +136,11 @@ p {
           display: flex;
           flex-direction: row; } }
 
-/********** REDES **********/
-.redes {
-  padding: 110px 0 0 5px; }
-  @media only screen and (min-width: 768px) {
-    .redes {
-      display: flex;
-      justify-content: center; } }
-  .redes ul li {
-    display: grid; }
-    .redes ul li a {
-      justify-self: center;
-      transform: translateY(-2px); }
-      .redes ul li a i {
-        font-size: 25px;
-        color: #2D7CAD; }
-
 .instagram:hover {
   color: #DD7A9A;
   transform: translateY(0); }
   @media only screen and (min-width: 768px) {
     .instagram:hover {
-      transform: translateY(-1px); } }
-
-.facebook:hover {
-  color: #0672E6;
-  transform: translateY(0); }
-  @media only screen and (min-width: 768px) {
-    .facebook:hover {
       transform: translateY(-1px); } }
 
 .whatsapp:hover {
@@ -143,8 +151,10 @@ p {
       transform: translateY(-1px); } }
 
 /********** MAIN **********/
-.main .main__titulo {
-  padding: 10px; }
+.main {
+  padding-top: 78px; }
+  .main .main__titulo {
+    padding: 10px; }
 
 /********** FOOTER **********/
 .footer img {

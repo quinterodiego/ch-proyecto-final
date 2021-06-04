@@ -10,7 +10,6 @@ $desktop: 1024px;
 
 $redes:(
     instagram: #DD7A9A,
-    facebook: #0672E6,
     whatsapp: #00BFA5
 );
 
@@ -28,6 +27,8 @@ body {
 
 h1 {
     color: $main-color;
+    margin: 0;
+    font-size: 25px;
 }
 
 @for $i from 2 through 6 {
@@ -90,18 +91,53 @@ p {
     background-color: $white-color!important;
     padding: 10px;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     margin: auto;
     @media only screen and (min-width: $desktop){
         width: 80%;
     }
     .navbar-brand {
-        @extend .flex-column;
-        .descripcion {
-            text-align: right;
-            font-size: 12.5px;
-            margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .navbar_logo img {
+            width: 45px;
         }
+        .navbar_brand--name {
+            display: flex;
+            flex-direction: column;
+            height: 45px;
+            .descripcion {
+                text-align: right;
+                font-size: 10px;
+                margin: 0;
+            }
+        }
+    }
+    .redes {
+        padding: 0;
+        width: 60px;
+        @media only screen and (min-width: $tablet){
+            display: flex;
+            justify-content: center;
+        }
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0;
+            li {
+                a {
+                    justify-self: center;
+                    transform: translateY(-2px);
+                    i {
+                        font-size: 30px;
+                        color: $second-color;
+                    }
+                }
+            }
+        }    
     }
     .navbar-toggler {
         @media only screen and (min-width: $desktop){
@@ -150,29 +186,6 @@ p {
     }
 }
 
-/********** REDES **********/
-
-.redes {
-    padding: 110px 0 0 5px;
-    @media only screen and (min-width: $tablet){
-        display: flex;
-        justify-content: center;
-    }
-    ul {
-        li {
-            display: grid;
-            a {
-                justify-self: center;
-                transform: translateY(-2px);
-                i {
-                    font-size: 25px;
-                    color: $second-color;
-                }
-            }
-        }
-    }    
-}
-
 @each $red, $color in $redes {
     .#{$red}:hover{
         color: $color;
@@ -186,6 +199,7 @@ p {
 /********** MAIN **********/
 
 .main {
+    padding-top: 78px;
     @extend .flex-column;
     .main__titulo {
         padding: 10px;
