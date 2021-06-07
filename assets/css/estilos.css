@@ -161,7 +161,13 @@ p {
 
 .main-vh-90 {
   padding-top: 78px;
-  height: 90vh; }
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media only screen and (min-width: 768px) {
+    .main-vh-90 {
+      padding-top: 100px; } }
 
 /********** FOOTER **********/
 .footer {
@@ -202,6 +208,29 @@ p {
   @media only screen and (min-width: 768px) {
     .productos .producto__detalle {
       margin: 3px; } }
+
+/********** INGRESAR **********/
+.ingresar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.form-ingresar {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .form-ingresar input {
+    margin-bottom: 10px; }
+  .form-ingresar button a {
+    color: #ffffff; }
+  .form-ingresar p {
+    color: #2D7CAD;
+    font-weight: 700;
+    padding: 5px 0; }
+  .form-ingresar p:hover {
+    opacity: 0.5; }
 
 /********** MI CUENTA **********/
 .compra {

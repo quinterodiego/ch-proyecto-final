@@ -220,6 +220,12 @@ p {
 .main-vh-90 {
     padding-top: 78px;
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media only screen and (min-width: $tablet){
+        padding-top: 100px;
+    }
 }
 
 /********** FOOTER **********/
@@ -269,6 +275,36 @@ p {
         @media only screen and (min-width: $tablet) {
             margin: 3px;
         }
+    }
+}
+
+/********** INGRESAR **********/
+
+.ingresar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-ingresar {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    input {
+        margin-bottom: 10px;
+    }
+    button a {
+        color: $white-color;
+    }
+    p {
+        color: $second-color;
+        font-weight: 700;
+        padding: 5px 0;
+    }
+    p:hover {
+        opacity: 0.5;
     }
 }
 
