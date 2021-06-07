@@ -25,6 +25,10 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+.container {
+    padding: 0;
+}
+
 h1 {
     color: $main-color;
     margin: 0;
@@ -91,10 +95,11 @@ p {
 
 .navbar {
     background-color: $white-color!important;
-    padding: 10px;
+    height: 12vh;
     display: flex;
     flex-direction: row;
     margin: auto;
+    padding: 10px 0;
     @media only screen and (min-width: $desktop){
         width: 80%;
     }
@@ -102,46 +107,23 @@ p {
         display: flex;
         flex-direction: row;
         align-items: center;
+        padding: 0 10px;
         .navbar_logo img {
             width: 45px;
+            margin-bottom: 1rem;
         }
         .navbar_brand--name {
             display: flex;
             flex-direction: column;
-            height: 45px;
-            .descripcion {
+            p {
                 text-align: right;
-                font-size: 10px;
-                margin: 0;
+                font-size: 12px; 
             }
         }
-    }
-    .redes {
-        padding: 0;
-        width: 60px;
-        @media only screen and (min-width: $tablet){
-            display: flex;
-            justify-content: center;
-        }
-        ul {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 0;
-            li {
-                a {
-                    justify-self: center;
-                    transform: translateY(-2px);
-                    i {
-                        font-size: 30px;
-                        color: $second-color;
-                    }
-                }
-            }
-        }    
     }
     .navbar-toggler {
+        margin-bottom: 1rem;
+        margin-right: 10px;
         @media only screen and (min-width: $desktop){
             display: none;
         }
@@ -168,7 +150,8 @@ p {
             }
         }
     }
-    .collapse {
+    .navbar-collapse {
+        background-color: $white-color;
         ul {
             li {
                 a:hover {
@@ -197,6 +180,10 @@ p {
     }
 }
 
+.back-navbar {
+    height: 12vh;
+}
+
 @each $red, $color in $redes {
     .#{$red}:hover{
         color: $color;
@@ -217,21 +204,48 @@ p {
     }
 }
 
-.main-vh-90 {
-    padding-top: 78px;
-    height: 90vh;
+.main-vh-85 {
+    height: 83vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     @media only screen and (min-width: $tablet){
         padding-top: 100px;
     }
 }
 
+/********** INDEX **********/
+
+.position-relative {
+    position: relative;
+}
+
+.bg-cover {
+    background-image: url(./../../img/cover.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.promos-cover {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+        color: $white-color;
+    }
+}
+
 /********** FOOTER **********/
 
 .footer {
-    height: 10vh;
+    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,12 +257,6 @@ p {
         padding-left: 5px;
         margin-bottom: 0;
     }
-}
-
-/********** INDEX **********/
-
-.carousel {
-    padding: 20px 0;
 }
 
 /********** PRODUCTOS **********/
@@ -285,26 +293,35 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.form-ingresar {
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    input {
-        margin-bottom: 10px;
-    }
-    button a {
-        color: $white-color;
-    }
-    p {
-        color: $second-color;
-        font-weight: 700;
-        padding: 5px 0;
-    }
-    p:hover {
-        opacity: 0.5;
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .form-ingresar {
+            label {
+                color: $white-color;
+            }
+            input {
+                margin-bottom: 10px;
+            }
+            button {
+                margin-top: 7px;
+            }
+            button a {
+                color: $white-color;
+            }
+            p {
+                color: $white-color;
+                font-weight: 700;
+                margin-bottom: 0;
+                margin-top: 7px;
+                font-weight: 300;
+            }
+            p:hover {
+                opacity: 0.5;
+            }
+        }
     }
 }
 

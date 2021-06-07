@@ -8,6 +8,9 @@
 body {
   font-family: 'Quicksand', sans-serif; }
 
+.container {
+  padding: 0; }
+
 h1 {
   color: #FB4F4F;
   margin: 0;
@@ -69,52 +72,37 @@ p {
 /********** MENU MOBILE **********/
 .navbar {
   background-color: #ffffff !important;
-  padding: 10px;
+  height: 12vh;
   display: flex;
   flex-direction: row;
-  margin: auto; }
+  margin: auto;
+  padding: 10px 0; }
   @media only screen and (min-width: 1024px) {
     .navbar {
       width: 80%; } }
   .navbar .navbar-brand {
     display: flex;
     flex-direction: row;
-    align-items: center; }
+    align-items: center;
+    padding: 0 10px; }
     .navbar .navbar-brand .navbar_logo img {
-      width: 45px; }
+      width: 45px;
+      margin-bottom: 1rem; }
     .navbar .navbar-brand .navbar_brand--name {
       display: flex;
-      flex-direction: column;
-      height: 45px; }
-      .navbar .navbar-brand .navbar_brand--name .descripcion {
+      flex-direction: column; }
+      .navbar .navbar-brand .navbar_brand--name p {
         text-align: right;
-        font-size: 10px;
-        margin: 0; }
-  .navbar .redes {
-    padding: 0;
-    width: 60px; }
-    @media only screen and (min-width: 768px) {
-      .navbar .redes {
-        display: flex;
-        justify-content: center; } }
-    .navbar .redes ul {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 0; }
-      .navbar .redes ul li a {
-        justify-self: center;
-        transform: translateY(-2px); }
-        .navbar .redes ul li a i {
-          font-size: 30px;
-          color: #2D7CAD; }
-  @media only screen and (min-width: 1024px) {
-    .navbar .navbar-toggler {
-      display: none; } }
-  .navbar .navbar-toggler i {
-    font-size: 25px;
-    color: #FB4F4F; }
+        font-size: 12px; }
+  .navbar .navbar-toggler {
+    margin-bottom: 1rem;
+    margin-right: 10px; }
+    @media only screen and (min-width: 1024px) {
+      .navbar .navbar-toggler {
+        display: none; } }
+    .navbar .navbar-toggler i {
+      font-size: 25px;
+      color: #FB4F4F; }
   .navbar ul li a {
     padding: 20px 0;
     font-size: 40px;
@@ -124,8 +112,10 @@ p {
     .navbar ul li a:hover {
       opacity: 0.5;
       transform: translateY(-2px); } }
-  .navbar .collapse ul li a:hover {
-    opacity: 0.5; }
+  .navbar .navbar-collapse {
+    background-color: #ffffff; }
+    .navbar .navbar-collapse ul li a:hover {
+      opacity: 0.5; }
   .navbar .menu-desktop {
     display: none; }
     .navbar .menu-desktop ul li {
@@ -138,6 +128,9 @@ p {
         .navbar .menu-desktop .navbar-nav {
           display: flex;
           flex-direction: row; } }
+
+.back-navbar {
+  height: 12vh; }
 
 .instagram:hover {
   color: #DD7A9A;
@@ -159,19 +152,41 @@ p {
   .main .main__titulo {
     padding: 10px; }
 
-.main-vh-90 {
-  padding-top: 78px;
-  height: 90vh;
+.main-vh-85 {
+  height: 83vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center; }
   @media only screen and (min-width: 768px) {
-    .main-vh-90 {
+    .main-vh-85 {
       padding-top: 100px; } }
+
+/********** INDEX **********/
+.position-relative {
+  position: relative; }
+
+.bg-cover {
+  background-image: url(./../../img/cover.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.promos-cover {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .promos-cover h2 {
+    color: #ffffff; }
 
 /********** FOOTER **********/
 .footer {
-  height: 10vh;
+  height: 5vh;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -181,10 +196,6 @@ p {
     font-size: 12px;
     padding-left: 5px;
     margin-bottom: 0; }
-
-/********** INDEX **********/
-.carousel {
-  padding: 20px 0; }
 
 /********** PRODUCTOS **********/
 @media only screen and (min-width: 768px) {
@@ -215,22 +226,27 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-
-.form-ingresar {
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .form-ingresar input {
-    margin-bottom: 10px; }
-  .form-ingresar button a {
-    color: #ffffff; }
-  .form-ingresar p {
-    color: #2D7CAD;
-    font-weight: 700;
-    padding: 5px 0; }
-  .form-ingresar p:hover {
-    opacity: 0.5; }
+  .ingresar fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .ingresar fieldset .form-ingresar label {
+      color: #ffffff; }
+    .ingresar fieldset .form-ingresar input {
+      margin-bottom: 10px; }
+    .ingresar fieldset .form-ingresar button {
+      margin-top: 7px; }
+    .ingresar fieldset .form-ingresar button a {
+      color: #ffffff; }
+    .ingresar fieldset .form-ingresar p {
+      color: #ffffff;
+      font-weight: 700;
+      margin-bottom: 0;
+      margin-top: 7px;
+      font-weight: 300; }
+    .ingresar fieldset .form-ingresar p:hover {
+      opacity: 0.5; }
 
 /********** MI CUENTA **********/
 .compra {
