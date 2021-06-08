@@ -11,6 +11,10 @@ body {
 .container {
   padding: 0; }
 
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: none; } }
+
 h1 {
   color: #FB4F4F;
   margin: 0;
@@ -71,15 +75,15 @@ p {
 /********** HEADER **********/
 /********** MENU MOBILE **********/
 .navbar {
-  background-color: #ffffff !important;
+  background-color: #eee !important;
   height: 12vh;
   display: flex;
   flex-direction: row;
   margin: auto;
   padding: 10px 0; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 768px) {
     .navbar {
-      width: 80%; } }
+      padding: 10px 100px; } }
   .navbar .navbar-brand {
     display: flex;
     flex-direction: row;
@@ -113,9 +117,12 @@ p {
       opacity: 0.5;
       transform: translateY(-2px); } }
   .navbar .navbar-collapse {
-    background-color: #ffffff; }
+    background-color: #eee; }
     .navbar .navbar-collapse ul li a:hover {
       opacity: 0.5; }
+    @media only screen and (min-width: 1024px) {
+      .navbar .navbar-collapse {
+        display: none; } }
   .navbar .menu-desktop {
     display: none; }
     .navbar .menu-desktop ul li {
@@ -148,7 +155,7 @@ p {
 
 /********** MAIN **********/
 .main {
-  padding-top: 78px; }
+  background-color: #eee; }
   .main .main__titulo {
     padding: 10px; }
 
@@ -158,9 +165,6 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  @media only screen and (min-width: 768px) {
-    .main-vh-85 {
-      padding-top: 100px; } }
 
 /********** INDEX **********/
 .position-relative {
@@ -189,7 +193,8 @@ p {
   height: 5vh;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background-color: #eee; }
   .footer .logo-footer img {
     width: 22px; }
   .footer .text-footer {
@@ -251,6 +256,8 @@ p {
 /********** MI CUENTA **********/
 .compra {
   padding: 10px 0;
+  min-width: 200px;
+  max-width: 300px;
   margin: 3px 0; }
   @media only screen and (min-width: 768px) {
     .compra {
@@ -279,6 +286,9 @@ p {
   @media only screen and (min-width: 768px) {
     .contacto fieldset {
       width: 60%; } }
+  @media only screen and (min-width: 1024px) {
+    .contacto fieldset {
+      width: 400px; } }
   .contacto fieldset legend {
     color: #2D7CAD;
     font-size: 30px; }

@@ -4,7 +4,7 @@ $main-color: #FB4F4F;
 $second-color: #2D7CAD;
 $text-color: #808080;
 $white-color: #ffffff;
-$bg-img: #eeeeee;
+$bg-color: #eee;
 $tablet: 768px;
 $desktop: 1024px;
 
@@ -27,6 +27,12 @@ body {
 
 .container {
     padding: 0;
+}
+
+.container, .container-sm {
+    @media (min-width: 576px) {
+        max-width: none;
+    }
 }
 
 h1 {
@@ -94,14 +100,14 @@ p {
 /********** MENU MOBILE **********/
 
 .navbar {
-    background-color: $white-color!important;
+    background-color: $bg-color!important;
     height: 12vh;
     display: flex;
     flex-direction: row;
     margin: auto;
     padding: 10px 0;
-    @media only screen and (min-width: $desktop){
-        width: 80%;
+    @media only screen and (min-width: $tablet){
+        padding: 10px 100px;
     }
     .navbar-brand {
         display: flex;
@@ -151,13 +157,16 @@ p {
         }
     }
     .navbar-collapse {
-        background-color: $white-color;
+        background-color: $bg-color;
         ul {
             li {
                 a:hover {
                     opacity: 0.5;
                 }
             }
+        }
+        @media only screen and (min-width: $desktop){
+            display: none;
         }
     }
     .menu-desktop {
@@ -197,7 +206,7 @@ p {
 /********** MAIN **********/
 
 .main {
-    padding-top: 78px;
+    background-color: $bg-color;
     @extend .flex-column;
     .main__titulo {
         padding: 10px;
@@ -210,9 +219,6 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @media only screen and (min-width: $tablet){
-        padding-top: 100px;
-    }
 }
 
 /********** INDEX **********/
@@ -249,6 +255,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: $bg-color;
     .logo-footer img {
         width: 22px;
     }
@@ -329,6 +336,8 @@ p {
 
 .compra {
     @include padding-top-botoom(10px, 0);
+    min-width: 200px;
+    max-width: 300px;
     margin: 3px 0;
     @media only screen and (min-width: $tablet) {
         margin: 0 0 5px 0;
@@ -366,6 +375,9 @@ p {
     fieldset {
         @media only screen and (min-width: $tablet){
             width: 60%;
+        }
+        @media only screen and (min-width: $desktop){
+            width: 400px;
         }
         legend {
             color: $second-color;
