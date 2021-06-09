@@ -139,20 +139,6 @@ p {
 .back-navbar {
   height: 12vh; }
 
-.instagram:hover {
-  color: #DD7A9A;
-  transform: translateY(0); }
-  @media only screen and (min-width: 768px) {
-    .instagram:hover {
-      transform: translateY(-1px); } }
-
-.whatsapp:hover {
-  color: #00BFA5;
-  transform: translateY(0); }
-  @media only screen and (min-width: 768px) {
-    .whatsapp:hover {
-      transform: translateY(-1px); } }
-
 /********** MAIN **********/
 .main {
   background-color: #eee; }
@@ -299,15 +285,40 @@ p {
 
 .whatsapp {
   position: fixed;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   bottom: 40px;
   right: 10px;
   background-color: #25d366;
   color: #FFF;
   border-radius: 50px;
-  font-size: 30px;
+  font-size: 20px;
   z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.whatsapp:hover {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.7; }
+
+.instagram {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  bottom: 85px;
+  right: 10px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #FFF;
+  border-radius: 50px;
+  font-size: 20px;
+  z-index: 100;
+  display: flex !important;
+  justify-content: center;
+  align-items: center; }
+
+.instagram:hover {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.7; }
