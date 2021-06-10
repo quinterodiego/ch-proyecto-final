@@ -172,7 +172,17 @@ p {
   justify-content: center;
   align-items: center; }
   .promos-cover h2 {
-    color: #ffffff; }
+    color: #ffffff;
+    font-weight: 700; }
+    @media only screen and (min-width: 768px) {
+      .promos-cover h2 {
+        font-size: 60px; } }
+  .promos-cover p {
+    color: #ffffff;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .promos-cover p {
+        font-size: 30px; } }
 
 /********** FOOTER **********/
 .footer {
@@ -247,21 +257,29 @@ p {
       margin: 0 0 5px 0; } }
 
 /********** NOSOTROS **********/
-.nosotros {
-  height: 90vh; }
+@media only screen and (min-width: 768px) {
+  .nosotros {
+    flex-direction: row;
+    padding: 0 20px;
+    height: 83vh; } }
+
+.nosotros img {
+  width: 100%; }
   @media only screen and (min-width: 1024px) {
-    .nosotros {
-      flex-direction: row; } }
-  .nosotros img {
-    width: 100%; }
-    @media only screen and (min-width: 1024px) {
-      .nosotros img {
-        width: 60%; } }
-  .nosotros .nosotrosDescripcion {
-    padding: 0 0 0 10px; }
-    .nosotros .nosotrosDescripcion p {
-      font-size: 20px;
-      text-align: justify; }
+    .nosotros img {
+      width: 60%; } }
+
+.nosotros .nosotrosDescripcion {
+  padding: 0 0 0 10px; }
+  @media only screen and (min-width: 768px) {
+    .nosotros .nosotrosDescripcion h2 {
+      font-size: 50px; } }
+  .nosotros .nosotrosDescripcion p {
+    font-size: 20px;
+    text-align: justify; }
+    @media only screen and (min-width: 768px) {
+      .nosotros .nosotrosDescripcion p {
+        font-size: 40px; } }
 
 /********** CONTACTO **********/
 .contacto {
