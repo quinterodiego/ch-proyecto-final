@@ -63,7 +63,7 @@ p {
 
 .boton:hover {
   cursor: pointer;
-  opacity: 0.5; }
+  opacity: 0.7; }
 
 .flex-column, .navbar ul li, .navbar ul li a, .main, .productos, .nosotros, .contacto {
   display: flex;
@@ -201,9 +201,6 @@ p {
     .productos .producto {
       margin: 0 2px 5px 2px; } }
 
-.productos .producto__imagen {
-  width: 100%; }
-
 .productos .producto__detalle {
   padding: 10px 20px;
   margin: 5px 0; }
@@ -269,6 +266,9 @@ p {
 /********** CONTACTO **********/
 .contacto {
   width: 100%; }
+  @media only screen and (min-width: 1024px) {
+    .contacto {
+      height: 83vh; } }
   @media only screen and (min-width: 768px) {
     .contacto fieldset {
       width: 60%; } }
@@ -283,6 +283,7 @@ p {
 .error-404 {
   width: 400px; }
 
+/********** REDES **********/
 .whatsapp {
   position: fixed;
   width: 40px;

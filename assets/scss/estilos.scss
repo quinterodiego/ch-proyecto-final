@@ -74,7 +74,7 @@ p {
 
 .boton:hover {
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .flex-column {
@@ -266,9 +266,6 @@ p {
             margin: 0 2px 5px 2px;
         }
     }
-    .producto__imagen {
-        width: 100%;
-    }
     .producto__detalle {
         @include padding-top-bottom(10px, 20px);
         margin: 5px 0;
@@ -356,6 +353,9 @@ p {
 
 .contacto {
     width: 100%;
+    @media only screen and (min-width: $desktop){
+        height: 83vh;
+    }
     @extend .flex-column;
     fieldset {
         @media only screen and (min-width: $tablet){
@@ -376,6 +376,8 @@ p {
 .error-404 {
     width: 400px;
 }
+
+/********** REDES **********/
 
 .whatsapp {
     position:fixed;
