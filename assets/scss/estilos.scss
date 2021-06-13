@@ -38,6 +38,7 @@ h1 {
 
 h2 {
     font-size: 22px;
+    font-weight: 700;
 }
 
 @for $i from 2 through 6 {
@@ -353,7 +354,7 @@ p {
         }
     }
     .nosotrosDescripcion {
-        padding: 0 0 0 10px;
+        padding: 0 10px;
         h2 {
             @media only screen and (min-width: $tablet){
                 font-size: 50px;
