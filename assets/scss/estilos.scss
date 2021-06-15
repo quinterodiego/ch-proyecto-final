@@ -30,6 +30,10 @@ body {
     }
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 h1 {
     color: $main-color;
     margin: 0;
@@ -242,18 +246,24 @@ p {
     position: relative;
 }
 
-.bg-cover {
-    background-image: url(./../../img/cover.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.carousel-item {
+    height: 85vh;
+}
+
+.carousel-item img {
+    width: 100vw;
+    height: 85vh;
+    object-fit: cover;
 }
 
 .promos-cover {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -454,6 +464,11 @@ p {
         width:60px;
         height:60px;
     }
+    .whatsapp-icon {
+        @media only screen and (min-width: $desktop){
+            font-size: 35px;
+        }
+    }
 }
 
 .whatsapp:hover {
@@ -480,6 +495,7 @@ p {
         width:60px;
         height:60px;
         bottom: 105px;
+        font-size: 35px;
     }
 }
 
