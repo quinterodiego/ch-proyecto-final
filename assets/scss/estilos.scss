@@ -6,7 +6,7 @@ $text-color: #808080;
 $white-color: #ffffff;
 $bg-color: #eee;
 $tablet: 768px;
-$desktop: 1024px;
+$desktop: 1200px;
 
 /********** GENERALES **********/ 
 
@@ -104,12 +104,12 @@ p {
 /********** MENU MOBILE **********/
 
 .navbar {
-    background-color: $bg-color!important;
     height: 12vh;
     display: flex;
     flex-direction: row;
     margin: auto;
     padding: 10px 0;
+    background-color: $white-color!important;
     @media only screen and (min-width: $tablet){
         padding: 10px 100px;
     }
@@ -147,8 +147,7 @@ p {
         li {
             @extend .flex-column;
             a {
-                @include padding-top-bottom(20px, 0);
-                font-size: 40px;
+                font-size: 30px;
                 @extend .flex-column;
                 color: $main-color!important;
                 transition: transform 250ms;
@@ -162,7 +161,7 @@ p {
         }
     }
     .navbar-collapse {
-        background-color: $bg-color;
+        background-color: $white-color;
         ul {
             li {
                 a:hover {
@@ -228,12 +227,11 @@ p {
 /********** MAIN **********/
 
 .main {
-    background-color: $bg-color;
     @extend .flex-column;
 }
 
-.main-vh-85 {
-    height: 83vh;
+.main-vh-88 {
+    height: calc(88vh - 30px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -279,6 +277,7 @@ p {
     p {
         color: $white-color;
         text-align: center;
+        padding: 0 10px;
         @media only screen and (min-width: $tablet){
             font-size: 30px;
         }
@@ -288,11 +287,11 @@ p {
 /********** FOOTER **********/
 
 .footer {
-    height: 5vh;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $bg-color;
+    background-color: $white-color;
     .logo-footer img {
         width: 22px;
     }
@@ -333,38 +332,52 @@ p {
 
 /********** INGRESAR **********/
 
-.ingresar {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    fieldset{
+.main-ingresar {
+    background-image: url(./../../img/cover.jpeg);
+    background-position: center;
+    background-size: cover;
+    .ingresar {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        .form-ingresar {
-            label {
-                color: $white-color;
-            }
-            input {
-                margin-bottom: 10px;
-            }
-            button {
-                margin-top: 7px;
-            }
-            button a {
-                color: $white-color;
-            }
-            p {
-                color: $white-color;
-                font-weight: 700;
-                margin-bottom: 0;
-                margin-top: 7px;
-                font-weight: 300;
-            }
-            p:hover {
-                opacity: 0.5;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        h2 {
+            color: $white-color;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .form-ingresar {
+                label {
+                    color: $white-color;
+                }
+                input {
+                    margin-bottom: 10px;
+                }
+                button {
+                    margin-top: 7px;
+                }
+                button a {
+                    color: $white-color;
+                }
+                a {
+                    text-decoration: none;
+                }
+                p {
+                    color: $white-color;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                    margin-top: 7px;
+                    font-weight: 300;
+                }
+                p:hover {
+                    opacity: 0.7;
+                }
             }
         }
     }
@@ -403,7 +416,7 @@ p {
         }
     }
     .nosotrosDescripcion {
-        padding: 0 10px;
+        padding: 10px;
         p {
             font-size: 20px;
             text-align: justify;
@@ -415,25 +428,41 @@ p {
 }
 
 /********** CONTACTO **********/
-
-.contacto {
-    width: 100%;
-    @extend .flex-column;
-    @media only screen and (min-width: $desktop){
-        height: 83vh;
-        justify-content: flex-start;
-    }
-    fieldset {
+.main-contacto {
+    background-image: url(./../../img/cover.jpeg);
+    background-position: center;
+    background-size: cover;
+    .contacto {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: 100%;
+        h2 {
+            color: $white-color;
+            text-align: center;
+            padding: 10px;
+        }
         @media only screen and (min-width: $tablet){
-            width: 60%;
+            height: 80vh;
+            justify-content: flex-start;
         }
         @media only screen and (min-width: $desktop){
-            width: 400px;
-            padding-top:70px;
+            height: 83vh;
+            justify-content: flex-start;
         }
-        legend {
-            color: $second-color;
-            font-size: 30px;
+        fieldset {
+            width: 100%;
+            padding: 10px 10px;
+            label {
+                color: $white-color;
+            }
+            @media only screen and (min-width: $tablet){
+                width: 60%;
+                padding-top: 0;
+            }
+            @media only screen and (min-width: $desktop){
+                width: 400px;
+                padding-top: 50px;
+            }
         }
     }
 }
