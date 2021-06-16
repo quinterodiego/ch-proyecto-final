@@ -356,8 +356,9 @@ p {
         height: 83vh;
         justify-content: flex-start; } }
     .main-contacto .contacto fieldset {
-      width: 100%;
-      padding: 10px 10px; }
+      width: 90%;
+      padding: 10px;
+      margin: auto; }
       .main-contacto .contacto fieldset label {
         color: #ffffff; }
       @media only screen and (min-width: 768px) {
