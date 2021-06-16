@@ -83,7 +83,6 @@ p {
 /********** HEADER **********/
 /********** MENU MOBILE **********/
 .navbar {
-  height: 12vh;
   display: flex;
   flex-direction: row;
   margin: auto;
