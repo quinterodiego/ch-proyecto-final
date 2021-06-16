@@ -27,7 +27,7 @@ h2 {
   font-size: 25px;
   font-weight: 700;
   text-transform: uppercase; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     h2 {
       font-size: 40px; } }
 
@@ -73,7 +73,7 @@ p {
   cursor: pointer;
   opacity: 0.7; }
 
-.flex-column, .navbar ul li, .navbar ul li a, .main, .productos, .nosotros {
+.flex-column, .navbar ul li, .navbar ul li a, .main, .productos, .datosPersonales, .comprasRealizadas, .nosotros {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,7 +89,7 @@ p {
   margin: auto;
   padding: 10px 0;
   background-color: #ffffff !important; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     .navbar {
       padding: 10px 100px; } }
   .navbar .navbar-brand {
@@ -110,7 +110,7 @@ p {
   .navbar .navbar-toggler {
     margin-bottom: 1rem;
     margin-right: 15px; }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1201px) {
       .navbar .navbar-toggler {
         display: none; } }
     .navbar .navbar-toggler i {
@@ -120,7 +120,7 @@ p {
     font-size: 30px;
     color: #FB4F4F !important;
     transition: transform 250ms; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1201px) {
     .navbar ul li a:hover {
       opacity: 0.5;
       transform: translateY(-2px); } }
@@ -128,7 +128,7 @@ p {
     background-color: #ffffff; }
     .navbar .navbar-collapse ul li a:hover {
       opacity: 0.5; }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1201px) {
       .navbar .navbar-collapse {
         display: none; } }
   .navbar .menu-desktop {
@@ -160,7 +160,7 @@ p {
         color: #FB4F4F;
         font-size: 10px;
         font-weight: 700; }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1201px) {
       .navbar .menu-desktop {
         display: block; }
         .navbar .menu-desktop .navbar-nav {
@@ -206,14 +206,14 @@ p {
   .promos-cover h2 {
     color: #ffffff;
     font-weight: 700; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) {
       .promos-cover h2 {
         font-size: 60px; } }
   .promos-cover p {
     color: #ffffff;
     text-align: center;
     padding: 0 10px; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) {
       .promos-cover p {
         font-size: 30px; } }
 
@@ -235,7 +235,7 @@ p {
 .productos h2 {
   padding: 0; }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 481px) {
   .productos {
     flex-wrap: wrap;
     flex-direction: row;
@@ -244,14 +244,14 @@ p {
 
 .productos .producto {
   margin: 0 0 5px 0; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     .productos .producto {
       margin: 0 2px 5px 2px; } }
 
 .productos .producto__detalle {
   padding: 10px 20px;
   margin: 5px 0; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     .productos .producto__detalle {
       margin: 3px; } }
 
@@ -300,19 +300,23 @@ p {
           opacity: 0.7; }
 
 /********** MI CUENTA **********/
-.compra {
-  padding: 10px 0;
-  min-width: 200px;
-  max-width: 300px;
-  margin: 3px 0; }
-  @media only screen and (min-width: 768px) {
-    .compra {
-      margin: 0 0 5px 0; } }
+.comprasRealizadas .comprasRealizadasProductos {
+  margin: 0;
+  display: flex;
+  justify-content: center; }
+  .comprasRealizadas .comprasRealizadasProductos .compra {
+    padding: 10px 0;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 3px 0; }
+    @media only screen and (min-width: 481px) {
+      .comprasRealizadas .comprasRealizadasProductos .compra {
+        margin: 5px; } }
 
 /********** NOSOTROS **********/
 .nosotros {
   justify-content: flex-start; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 481px) {
     .nosotros {
       padding: 0 20px;
       height: 83vh; }
@@ -322,7 +326,7 @@ p {
         align-items: center; } }
   .nosotros img {
     width: 100%; }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1201px) {
       .nosotros img {
         width: 50%; } }
   .nosotros .nosotrosDescripcion {
@@ -330,7 +334,7 @@ p {
     .nosotros .nosotrosDescripcion p {
       font-size: 20px;
       text-align: justify; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 481px) {
         .nosotros .nosotrosDescripcion p {
           font-size: 35px; } }
 
@@ -347,11 +351,11 @@ p {
       color: #ffffff;
       text-align: center;
       padding: 10px; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 481px) {
       .main-contacto .contacto {
         height: 80vh;
         justify-content: flex-start; } }
-    @media only screen and (min-width: 1200px) {
+    @media only screen and (min-width: 1201px) {
       .main-contacto .contacto {
         height: 83vh;
         justify-content: flex-start; } }
@@ -361,11 +365,11 @@ p {
       margin: auto; }
       .main-contacto .contacto fieldset label {
         color: #ffffff; }
-      @media only screen and (min-width: 768px) {
+      @media only screen and (min-width: 481px) {
         .main-contacto .contacto fieldset {
           width: 60%;
           padding-top: 0; } }
-      @media only screen and (min-width: 1200px) {
+      @media only screen and (min-width: 1201px) {
         .main-contacto .contacto fieldset {
           width: 400px;
           padding-top: 50px; } }
@@ -389,11 +393,11 @@ p {
   display: flex;
   justify-content: center;
   align-items: center; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1201px) {
     .whatsapp {
       width: 60px;
       height: 60px; } }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1201px) {
     .whatsapp .whatsapp-icon {
       font-size: 35px; } }
 
@@ -416,7 +420,7 @@ p {
   display: flex !important;
   justify-content: center;
   align-items: center; }
-  @media only screen and (min-width: 1200px) {
+  @media only screen and (min-width: 1201px) {
     .instagram {
       width: 60px;
       height: 60px;

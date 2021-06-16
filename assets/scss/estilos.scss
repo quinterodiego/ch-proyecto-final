@@ -5,8 +5,9 @@ $second-color: #2D7CAD;
 $text-color: #808080;
 $white-color: #ffffff;
 $bg-color: #eee;
-$tablet: 768px;
-$desktop: 1200px;
+$tablet: 481px;
+$laptop: 769px;
+$desktop: 1201px;
 
 /********** GENERALES **********/ 
 
@@ -389,13 +390,25 @@ p {
 
 /********** MI CUENTA **********/
 
-.compra {
-    @include padding-top-bottom(10px, 0);
-    min-width: 200px;
-    max-width: 300px;
-    margin: 3px 0;
-    @media only screen and (min-width: $tablet) {
-        margin: 0 0 5px 0;
+.datosPersonales {
+    @extend .flex-column;
+}
+
+.comprasRealizadas {
+    @extend .flex-column;
+    .comprasRealizadasProductos {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        .compra {
+            @include padding-top-bottom(10px, 0);
+            min-width: 200px;
+            max-width: 300px;
+            margin: 3px 0;
+            @media only screen and (min-width: $tablet) {
+                margin: 5px;
+            }
+        }
     }
 }
 
