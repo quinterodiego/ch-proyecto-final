@@ -27,7 +27,7 @@ h2 {
   font-size: 25px;
   font-weight: 700;
   text-transform: uppercase; }
-  @media only screen and (min-width: 576px) {
+  @media only screen and (min-width: 992px) {
     h2 {
       font-size: 40px; } }
 
@@ -280,7 +280,7 @@ p {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 100%; }
+      width: 300px; }
       .main-ingresar .ingresar fieldset .form-ingresar {
         width: 90%;
         padding: 10px; }
@@ -357,32 +357,29 @@ p {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%; }
-    .main-contacto .contacto h2 {
-      color: #ffffff;
-      text-align: center;
-      padding: 10px; }
-    @media only screen and (min-width: 576px) {
-      .main-contacto .contacto {
-        height: 80vh;
-        justify-content: flex-start; } }
-    @media only screen and (min-width: 1201px) {
-      .main-contacto .contacto {
-        height: 83vh;
-        justify-content: flex-start; } }
+    .main-contacto .contacto .titulo {
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .main-contacto .contacto .titulo h2 {
+        color: #ffffff;
+        text-align: center; }
     .main-contacto .contacto fieldset {
-      width: 90%;
-      padding: 10px;
-      margin: auto; }
-      .main-contacto .contacto fieldset label {
-        color: #ffffff; }
-      @media only screen and (min-width: 576px) {
-        .main-contacto .contacto fieldset {
-          width: 60%;
-          padding-top: 0; } }
-      @media only screen and (min-width: 1201px) {
-        .main-contacto .contacto fieldset {
-          width: 400px;
-          padding-top: 50px; } }
+      width: 100%;
+      padding: 30px 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .main-contacto .contacto fieldset form {
+        width: 300px; }
+        .main-contacto .contacto fieldset form .label-input {
+          margin-bottom: 20px; }
+          .main-contacto .contacto fieldset form .label-input label {
+            color: #ffffff;
+            margin-bottom: 0; }
+        .main-contacto .contacto fieldset form button {
+          margin-top: 10px; }
 
 /********** 404 **********/
 .error-404 {

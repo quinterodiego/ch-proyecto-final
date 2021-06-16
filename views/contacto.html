@@ -91,33 +91,27 @@
         <!-- Contenido principal -->
         <main class="main-contacto main-vh-90">
             <div class="contacto">
-                <h2>Enviá tu consulta</h2>
+                <div class="titulo">
+                    <h2>Enviá tu consulta</h2>
+                </div>
                 <fieldset>
-                    <form>
-                        <div class="row">
-                            <div class="form-group col-12 col-md-8 col-lg-12">
-                                <label for="exampleInputEmail1">Nombre</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-12 col-md-8 col-lg-12">
-                                <label for="exampleInputEmail1">Telefono</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-12 col-md-8 col-lg-12">
-                                <label for="exampleInputEmail1">Email</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-group col-12 col-md-8 col-lg-12">
-                                <label for="exampleFormControlTextarea1">Comentario o consulta</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
-                            </div>
-                        </div>
+                    <form>               
+                        <div class="label-input">
+                            <label for="exampleInputEmail1">Nombre</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>                 
+                        <div class="label-input">
+                            <label for="exampleInputEmail1">Telefono</label>
+                            <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>                  
+                        <div class="label-input">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>                   
+                        <div class="label-input">
+                            <label for="exampleFormControlTextarea1">Comentario o consulta</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                        </div>                     
                         <button type="submit" class="boton">Enviar</button>
                     </form>
                 </fieldset>
