@@ -42,9 +42,10 @@ h1 {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0;
     @media only screen and (min-width: $laptop){
         font-size: 40px;;
     }
@@ -69,6 +70,13 @@ a {
 
 p {
     color: $text-color;
+}
+
+.titulo {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boton {
@@ -277,16 +285,13 @@ p {
     h2 {
         color: $white-color;
         font-weight: 700;
-        @media only screen and (min-width: $tablet){
-            font-size: 60px;
-        }
     }
     p {
         color: $white-color;
         text-align: center;
         padding: 0 10px;
-        @media only screen and (min-width: $tablet){
-            font-size: 30px;
+        @media only screen and (min-width: $laptop){
+            font-size: 20px;
         }
     }
 }
@@ -464,18 +469,11 @@ p {
     .contacto {
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
-        height: 100%;
-        .titulo {
-            height: 80px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            h2 {
-                color: $white-color;
-                text-align: center;
-            }
+        height: 100%;   
+        h2 {
+            color: $white-color;
+            text-align: center;
         }
-
         fieldset {
             width: 100%;
             padding: 30px 10px 0;

@@ -24,9 +24,10 @@ h1 {
   font-size: 25px; }
 
 h2 {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 0; }
   @media only screen and (min-width: 992px) {
     h2 {
       font-size: 40px; } }
@@ -58,6 +59,12 @@ a {
 
 p {
   color: #808080; }
+
+.titulo {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .boton {
   padding: 10px;
@@ -211,16 +218,13 @@ p {
   .promos-cover h2 {
     color: #ffffff;
     font-weight: 700; }
-    @media only screen and (min-width: 576px) {
-      .promos-cover h2 {
-        font-size: 60px; } }
   .promos-cover p {
     color: #ffffff;
     text-align: center;
     padding: 0 10px; }
-    @media only screen and (min-width: 576px) {
+    @media only screen and (min-width: 992px) {
       .promos-cover p {
-        font-size: 30px; } }
+        font-size: 20px; } }
 
 /********** FOOTER **********/
 .footer {
@@ -357,14 +361,9 @@ p {
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%; }
-    .main-contacto .contacto .titulo {
-      height: 80px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .main-contacto .contacto .titulo h2 {
-        color: #ffffff;
-        text-align: center; }
+    .main-contacto .contacto h2 {
+      color: #ffffff;
+      text-align: center; }
     .main-contacto .contacto fieldset {
       width: 100%;
       padding: 30px 10px 0;
