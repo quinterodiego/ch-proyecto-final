@@ -274,25 +274,30 @@ p {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center; }
-      .main-ingresar .ingresar fieldset .form-ingresar label {
-        color: #ffffff; }
-      .main-ingresar .ingresar fieldset .form-ingresar input {
-        margin-bottom: 10px; }
-      .main-ingresar .ingresar fieldset .form-ingresar button {
-        margin-top: 7px; }
-      .main-ingresar .ingresar fieldset .form-ingresar button a {
-        color: #ffffff; }
-      .main-ingresar .ingresar fieldset .form-ingresar a {
-        text-decoration: none; }
-      .main-ingresar .ingresar fieldset .form-ingresar p {
-        color: #ffffff;
-        font-weight: 700;
-        margin-bottom: 0;
-        margin-top: 7px;
-        font-weight: 300; }
-      .main-ingresar .ingresar fieldset .form-ingresar p:hover {
-        opacity: 0.7; }
+      align-items: center;
+      width: 100%; }
+      .main-ingresar .ingresar fieldset .form-ingresar {
+        width: 90%;
+        padding: 10px; }
+        .main-ingresar .ingresar fieldset .form-ingresar label {
+          color: #ffffff;
+          margin-top: 10px; }
+        .main-ingresar .ingresar fieldset .form-ingresar input {
+          width: 100%; }
+        .main-ingresar .ingresar fieldset .form-ingresar button {
+          margin-top: 20px; }
+        .main-ingresar .ingresar fieldset .form-ingresar button a {
+          color: #ffffff; }
+        .main-ingresar .ingresar fieldset .form-ingresar a {
+          text-decoration: none; }
+        .main-ingresar .ingresar fieldset .form-ingresar p {
+          color: #ffffff;
+          font-weight: 700;
+          margin-bottom: 0;
+          margin-top: 7px;
+          font-weight: 300; }
+        .main-ingresar .ingresar fieldset .form-ingresar p:hover {
+          opacity: 0.7; }
 
 /********** MI CUENTA **********/
 .compra {

@@ -352,15 +352,19 @@ p {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            width: 100%;
             .form-ingresar {
+                width: 90%;
+                padding: 10px;
                 label {
                     color: $white-color;
+                    margin-top: 10px;
                 }
                 input {
-                    margin-bottom: 10px;
+                    width: 100%;
                 }
                 button {
-                    margin-top: 7px;
+                    margin-top: 20px;
                 }
                 button a {
                     color: $white-color;
