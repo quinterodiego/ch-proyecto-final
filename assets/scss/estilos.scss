@@ -5,8 +5,8 @@ $second-color: #2D7CAD;
 $text-color: #808080;
 $white-color: #ffffff;
 $bg-color: #eee;
-$tablet: 481px;
-$laptop: 769px;
+$tablet: 576px;
+$laptop: 992px;
 $desktop: 1201px;
 
 /********** GENERALES **********/ 
@@ -116,8 +116,8 @@ p {
     margin: auto;
     padding: 10px 0;
     background-color: $white-color!important;
-    @media only screen and (min-width: $tablet){
-        padding: 10px 100px;
+    @media only screen and (min-width: $laptop){
+        padding: 10px;
     }
     .navbar-brand {
         display: flex;
@@ -141,7 +141,7 @@ p {
     .navbar-toggler {
         margin-bottom: 1rem;
         margin-right: 15px;
-        @media only screen and (min-width: $desktop){
+        @media only screen and (min-width: $laptop){
             display: none;
         }
         i {
@@ -176,7 +176,7 @@ p {
                 }
             }
         }
-        @media only screen and (min-width: $desktop){
+        @media only screen and (min-width: $laptop){
             display: none;
         }
     }
@@ -217,8 +217,8 @@ p {
                 font-weight: 700; 
             }
         }
-        @media only screen and (min-width: $desktop){
-            display: block;
+        @media only screen and (min-width: $laptop){
+            display: flex;
             .navbar-nav {
                 display: flex;
                 flex-direction: row;
@@ -422,29 +422,35 @@ p {
 
 .nosotros {
     @extend .flex-column;
-    justify-content: flex-start;
-    @media only screen and (min-width: $tablet){
+    @media only screen and (min-width: $laptop){
         padding: 0 20px;
-        height: 83vh;
-        .imagen-descripcion {
-            padding-top: 50px;
-            display: flex;
-            align-items: center;
-        }
+        height: 90vh;
     }
-    img {
-        width: 100%;
-        @media only screen and (min-width: $desktop){
-            width: 50%;
+    .imagen-descripcion {
+        display: flex;
+        @extend .flex-column;
+        @media only screen and (min-width: $tablet){
+            padding-top: 10px;
         }
-    }
-    .nosotrosDescripcion {
-        padding: 10px;
-        p {
-            font-size: 20px;
-            text-align: justify;
+        @media only screen and (min-width: $laptop){
+            flex-direction: row;
+            padding: 50px 0;
+        }
+        img {
+            width: 100%;
+            max-width: 574px;
             @media only screen and (min-width: $tablet){
-                font-size: 35px;
+                width: 80%;
+            }
+        }
+        .nosotrosDescripcion {
+            padding: 0 10px;
+            p {
+                font-size: 20px;
+                text-align: justify;
+                @media only screen and (min-width: $laptop){
+                    font-size: 25px;
+                }
             }
         }
     }

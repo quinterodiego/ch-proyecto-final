@@ -27,7 +27,7 @@ h2 {
   font-size: 25px;
   font-weight: 700;
   text-transform: uppercase; }
-  @media only screen and (min-width: 481px) {
+  @media only screen and (min-width: 576px) {
     h2 {
       font-size: 40px; } }
 
@@ -73,7 +73,7 @@ p {
   cursor: pointer;
   opacity: 0.7; }
 
-.flex-column, .navbar ul li, .navbar ul li a, .main, .productos, .datosPersonales, .comprasRealizadas, .nosotros {
+.flex-column, .navbar ul li, .navbar ul li a, .main, .productos, .datosPersonales, .comprasRealizadas, .nosotros, .nosotros .imagen-descripcion {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,9 +93,9 @@ p {
   margin: auto;
   padding: 10px 0;
   background-color: #ffffff !important; }
-  @media only screen and (min-width: 481px) {
+  @media only screen and (min-width: 992px) {
     .navbar {
-      padding: 10px 100px; } }
+      padding: 10px; } }
   .navbar .navbar-brand {
     display: flex;
     flex-direction: row;
@@ -114,7 +114,7 @@ p {
   .navbar .navbar-toggler {
     margin-bottom: 1rem;
     margin-right: 15px; }
-    @media only screen and (min-width: 1201px) {
+    @media only screen and (min-width: 992px) {
       .navbar .navbar-toggler {
         display: none; } }
     .navbar .navbar-toggler i {
@@ -133,7 +133,7 @@ p {
     background-color: #ffffff; }
     .navbar .navbar-collapse ul li a:hover {
       opacity: 0.5; }
-    @media only screen and (min-width: 1201px) {
+    @media only screen and (min-width: 992px) {
       .navbar .navbar-collapse {
         display: none; } }
   .navbar .menu-desktop {
@@ -165,9 +165,9 @@ p {
         color: #FB4F4F;
         font-size: 10px;
         font-weight: 700; }
-    @media only screen and (min-width: 1201px) {
+    @media only screen and (min-width: 992px) {
       .navbar .menu-desktop {
-        display: block; }
+        display: flex; }
         .navbar .menu-desktop .navbar-nav {
           display: flex;
           flex-direction: row; } }
@@ -211,14 +211,14 @@ p {
   .promos-cover h2 {
     color: #ffffff;
     font-weight: 700; }
-    @media only screen and (min-width: 481px) {
+    @media only screen and (min-width: 576px) {
       .promos-cover h2 {
         font-size: 60px; } }
   .promos-cover p {
     color: #ffffff;
     text-align: center;
     padding: 0 10px; }
-    @media only screen and (min-width: 481px) {
+    @media only screen and (min-width: 576px) {
       .promos-cover p {
         font-size: 30px; } }
 
@@ -240,7 +240,7 @@ p {
 .productos h2 {
   padding: 0; }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 576px) {
   .productos {
     flex-wrap: wrap;
     flex-direction: row;
@@ -249,14 +249,14 @@ p {
 
 .productos .producto {
   margin: 0 0 5px 0; }
-  @media only screen and (min-width: 481px) {
+  @media only screen and (min-width: 576px) {
     .productos .producto {
       margin: 0 2px 5px 2px; } }
 
 .productos .producto__detalle {
   padding: 10px 20px;
   margin: 5px 0; }
-  @media only screen and (min-width: 481px) {
+  @media only screen and (min-width: 576px) {
     .productos .producto__detalle {
       margin: 3px; } }
 
@@ -314,34 +314,39 @@ p {
     min-width: 200px;
     max-width: 300px;
     margin: 3px 0; }
-    @media only screen and (min-width: 481px) {
+    @media only screen and (min-width: 576px) {
       .comprasRealizadas .comprasRealizadasProductos .compra {
         margin: 5px; } }
 
 /********** NOSOTROS **********/
-.nosotros {
-  justify-content: flex-start; }
-  @media only screen and (min-width: 481px) {
-    .nosotros {
-      padding: 0 20px;
-      height: 83vh; }
-      .nosotros .imagen-descripcion {
-        padding-top: 50px;
-        display: flex;
-        align-items: center; } }
-  .nosotros img {
-    width: 100%; }
-    @media only screen and (min-width: 1201px) {
-      .nosotros img {
-        width: 50%; } }
-  .nosotros .nosotrosDescripcion {
-    padding: 10px; }
-    .nosotros .nosotrosDescripcion p {
+@media only screen and (min-width: 992px) {
+  .nosotros {
+    padding: 0 20px;
+    height: 90vh; } }
+
+.nosotros .imagen-descripcion {
+  display: flex; }
+  @media only screen and (min-width: 576px) {
+    .nosotros .imagen-descripcion {
+      padding-top: 10px; } }
+  @media only screen and (min-width: 992px) {
+    .nosotros .imagen-descripcion {
+      flex-direction: row;
+      padding: 50px 0; } }
+  .nosotros .imagen-descripcion img {
+    width: 100%;
+    max-width: 574px; }
+    @media only screen and (min-width: 576px) {
+      .nosotros .imagen-descripcion img {
+        width: 80%; } }
+  .nosotros .imagen-descripcion .nosotrosDescripcion {
+    padding: 0 10px; }
+    .nosotros .imagen-descripcion .nosotrosDescripcion p {
       font-size: 20px;
       text-align: justify; }
-      @media only screen and (min-width: 481px) {
-        .nosotros .nosotrosDescripcion p {
-          font-size: 35px; } }
+      @media only screen and (min-width: 992px) {
+        .nosotros .imagen-descripcion .nosotrosDescripcion p {
+          font-size: 25px; } }
 
 /********** CONTACTO **********/
 .main-contacto {
@@ -356,7 +361,7 @@ p {
       color: #ffffff;
       text-align: center;
       padding: 10px; }
-    @media only screen and (min-width: 481px) {
+    @media only screen and (min-width: 576px) {
       .main-contacto .contacto {
         height: 80vh;
         justify-content: flex-start; } }
@@ -370,7 +375,7 @@ p {
       margin: auto; }
       .main-contacto .contacto fieldset label {
         color: #ffffff; }
-      @media only screen and (min-width: 481px) {
+      @media only screen and (min-width: 576px) {
         .main-contacto .contacto fieldset {
           width: 60%;
           padding-top: 0; } }
