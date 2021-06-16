@@ -82,9 +82,14 @@ p {
 /********** MIXIMS **********/
 /********** HEADER **********/
 /********** MENU MOBILE **********/
+.link-active {
+  border-bottom: solid 2px #FB4F4F; }
+
 .navbar {
+  height: 10vh;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: auto;
   padding: 10px 0;
   background-color: #ffffff !important; }
@@ -122,7 +127,8 @@ p {
   @media only screen and (min-width: 1201px) {
     .navbar ul li a:hover {
       opacity: 0.5;
-      transform: translateY(-2px); } }
+      transform: translateY(-2px);
+      text-decoration: none; } }
   .navbar .navbar-collapse {
     background-color: #ffffff; }
     .navbar .navbar-collapse ul li a:hover {
@@ -167,11 +173,11 @@ p {
           flex-direction: row; } }
 
 .back-navbar {
-  height: 12vh; }
+  height: 10vh; }
 
 /********** MAIN **********/
-.main-vh-88 {
-  height: calc(88vh - 30px);
+.main-vh-90 {
+  height: calc(90vh - 30px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -182,11 +188,11 @@ p {
   position: relative; }
 
 .carousel-item {
-  height: 85vh; }
+  height: 90vh; }
 
 .carousel-item img {
   width: 100vw;
-  height: 85vh;
+  height: 90vh;
   object-fit: cover; }
 
 .promos-cover {

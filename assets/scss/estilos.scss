@@ -104,9 +104,15 @@ p {
 
 /********** MENU MOBILE **********/
 
+.link-active {
+    border-bottom: solid 2px $main-color;
+}
+
 .navbar {
+    height: 10vh;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin: auto;
     padding: 10px 0;
     background-color: $white-color!important;
@@ -156,6 +162,7 @@ p {
                 @media only screen and (min-width: $desktop){
                     opacity: 0.5;
                     transform: translateY(-2px);
+                    text-decoration: none;
                 }
             }
         }
@@ -221,7 +228,7 @@ p {
 }
 
 .back-navbar {
-    height: 12vh;
+    height: 10vh;
 }
 
 /********** MAIN **********/
@@ -230,8 +237,8 @@ p {
     @extend .flex-column;
 }
 
-.main-vh-88 {
-    height: calc(88vh - 30px);
+.main-vh-90 {
+    height: calc(90vh - 30px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -245,12 +252,12 @@ p {
 }
 
 .carousel-item {
-    height: 85vh;
+    height: 90vh;
 }
 
 .carousel-item img {
     width: 100vw;
-    height: 85vh;
+    height: 90vh;
     object-fit: cover;
 }
 
