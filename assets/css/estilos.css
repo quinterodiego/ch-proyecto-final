@@ -80,7 +80,7 @@ p {
   cursor: pointer;
   opacity: 0.7; }
 
-.flex-column, .navbar ul li, .navbar ul li a, .main, .productos, .datosPersonales, .comprasRealizadas, .nosotros, .nosotros .imagen-descripcion {
+.flex-column, .navbar ul li, .navbar ul li a, .main, .productos, .datosPersonales, .comprasRealizadas, .nosotros, .nosotros .imagen-descripcion, .main-contacto .contacto fieldset form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -372,11 +372,30 @@ p {
       align-items: center; }
       .main-contacto .contacto fieldset form {
         width: 300px; }
-        .main-contacto .contacto fieldset form .label-input {
-          margin-bottom: 20px; }
-          .main-contacto .contacto fieldset form .label-input label {
-            color: #ffffff;
-            margin-bottom: 0; }
+        @media only screen and (min-width: 992px) {
+          .main-contacto .contacto fieldset form {
+            width: 700px; } }
+        @media only screen and (min-width: 992px) {
+          .main-contacto .contacto fieldset form .form-box {
+            display: flex; } }
+        .main-contacto .contacto fieldset form .form-box .form-sub-box {
+          margin: 0 20px; }
+          .main-contacto .contacto fieldset form .form-box .form-sub-box .label-input {
+            margin-bottom: 20px; }
+            .main-contacto .contacto fieldset form .form-box .form-sub-box .label-input label {
+              color: #ffffff;
+              margin-bottom: 0; }
+            .main-contacto .contacto fieldset form .form-box .form-sub-box .label-input input {
+              width: 250px; }
+              @media only screen and (min-width: 992px) {
+                .main-contacto .contacto fieldset form .form-box .form-sub-box .label-input input {
+                  width: 300px; } }
+            .main-contacto .contacto fieldset form .form-box .form-sub-box .label-input textarea {
+              height: 144px; }
+              @media only screen and (min-width: 992px) {
+                .main-contacto .contacto fieldset form .form-box .form-sub-box .label-input textarea {
+                  width: 300px;
+                  height: 202px; } }
         .main-contacto .contacto fieldset form button {
           margin-top: 10px; }
 
