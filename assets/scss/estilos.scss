@@ -469,7 +469,8 @@ p {
     .contacto {
         background-color: rgba(0, 0, 0, 0.5);
         width: 100%;
-        height: 100%;   
+        height: 100%;
+        @extend .flex-column;   
         h2 {
             color: $white-color;
             text-align: center;

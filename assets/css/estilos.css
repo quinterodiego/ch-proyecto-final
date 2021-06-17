@@ -80,7 +80,7 @@ p {
   cursor: pointer;
   opacity: 0.7; }
 
-.flex-column, .navbar ul li, .navbar ul li a, .main, .productos, .datosPersonales, .comprasRealizadas, .nosotros, .nosotros .imagen-descripcion, .main-contacto .contacto fieldset form {
+.flex-column, .navbar ul li, .navbar ul li a, .main, .productos, .datosPersonales, .comprasRealizadas, .nosotros, .nosotros .imagen-descripcion, .main-contacto .contacto, .main-contacto .contacto fieldset form {
   display: flex;
   flex-direction: column;
   align-items: center;
