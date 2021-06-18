@@ -1,10 +1,11 @@
 {
-  "name": "desafio",
+  "name": "ch-proyecto-final-bootstrap",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss assets/scss/estilos.scss assets/css/estilos.css",
+    "build-css": "node-sass --include-path scss assets/scss/index.scss assets/css/index.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "",
@@ -12,15 +13,5 @@
   "devDependencies": {
     "node-sass": "^6.0.0",
     "nodemon": "^2.0.7"
-  },
-  "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/quinterodiego/ch-proyecto-final.git"
-  },
-  "bugs": {
-    "url": "https://github.com/quinterodiego/ch-proyecto-final/issues"
-  },
-  "homepage": "https://github.com/quinterodiego/ch-proyecto-final#readme",
-  "description": ""
+  }
 }

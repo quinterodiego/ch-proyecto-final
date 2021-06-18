@@ -2,256 +2,193 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Estos son todos nuestros productos para que puedas disfrutar esta temporada con lo último de la moda">
     <meta name="keywords" content="tienda, ropa, productos, camisas, calzado, indumentaria, jeans, denim, botas, abrigos, sweaters, sacos, montgomery, buzos, remeras, chombas, polos, camisetas, pantalones, borcegos, zapatos">
     <title>LERO LERO - Productos</title>
-    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./../assets/css/estilos.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../assets/css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://kit.fontawesome.com/168160de4f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <!-- Icono Whatsapp -->
-        <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-        <!-- Icono Instagram -->
-        <a href="https://www.instagram.com/?hl=es" target="_blank"><i class="fab fa-instagram instagram"></i></a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="./../index.html">
+                <img src="./../img/logo.png" alt="">
+                <h1>LERO LERO STORE</h1>
+            </a>
 
-        <!-- Cabecera -->
-        <header>
-            <nav class="navbar navbar-light bg-light fixed-top">
-                <a class="navbar-brand" href="./../index.html">
-                    <div class="navbar_logo">
-                        <img src="./../img/logo.png" alt="">
-                    </div>
-                    <div class="navbar_brand--name">
-                        <h1>LERO LERO</h1>
-                        <p class="descripcion">Ropa & Accesorios</p>
-                    </div>
-                </a>
-                    
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="./../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./promos.html">PROMOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./productos.html"><b>PRODUCTOS</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./ingresar.html">INGRESAR</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="menu-desktop">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="./../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./promos.html">PROMOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="link-active" href="./productos.html"><b>PRODUCTOS</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./ingresar.html">INGRESAR</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./contacto.html">CONTACTO</a>
-                        </li>
-                        <li class="nav-item cart">
-                            <a href="#">
-                                <i class="fas fa-cart-plus"><div class="prod-cart">2</div></i>                          
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="back-navbar"></div>
-            <!-- Fin Barra de navegacion -->
-        </header>
-        <!-- Fin Cabecera -->
-        
-        <!-- Contenido principal -->
-        <main class="main"><!-- BLOQUE 1 -->
-            <div class="titulo">
-                <h2 class="main__titulo">Productos</h2>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./../index.html">INICIO<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ingresar.html">INGRESAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-cart-plus cart">
+                                <div class="prod-cart">2</div>
+                            </i>                         
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="productos">
-                <div class="card producto" style="width: 18rem;">
-                    <a href="#">
-                        <img src="./../img/ropa/producto1.jpg" class="card-img-top producto__imagen" alt="Producto 1">
-                    </a>
-                    <div class="card-body producto__detalle"><!-- BLOQUE 2 -->
+        </nav>
+    </header>
+    <main>
+        <section class="productos">
+            <h2>PRODUCTOS</h2>
+            <div class="content-products">
+                <div class="card" style="width: 18rem;">
+                    <img src="./../img/ropa/producto1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
                         <h3 class="card-title">BUZO STANFORD</h3>
                         <p class="card-text"><strong>TALLES:</strong> S - M - L - XL</p>
                         <p class="card-text"><strong>MATERIAL:</strong> Algodón</p>
                         <p class="card-text"><strong>PRECIO:</strong> $2000</p>
-                        <a href="#" class="btn boton">COMPRAR</a>
+                        <a href="#" class="button">comprar</a>
                     </div>
                 </div>
-                <div class="card producto" style="width: 18rem;">
-                    <a href="#">
-                        <img src="./../img/ropa/producto2.jpg" class="card-img-top producto__imagen" alt="Producto 2">
-                    </a>
-                    <div class="card-body producto__detalle">
+                <div class="card" style="width: 18rem;">
+                    <img src="./../img/ropa/producto2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
                         <h3 class="card-title">SWEETER FLORES</h3>
                         <p class="card-text"><strong>TALLES:</strong> S - M - L - XL</p>
                         <p class="card-text"><strong>MATERIAL:</strong> Lana</p>
                         <p class="card-text"><strong>PRECIO:</strong> $2500</p>
-                        <a href="#" class="btn boton">COMPRAR</a>
+                    <a href="#" class="button">comprar</a>
                     </div>
                 </div>
-                <div class="card producto" style="width: 18rem;">
-                    <a href="#">
-                        <img src="./../img/ropa/producto3.jpg" class="card-img-top producto__imagen" alt="Producto 3">
-                    </a>
-                    <div class="card-body producto__detalle">
+                <div class="card" style="width: 18rem;">
+                    <img src="./../img/ropa/producto3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
                         <h3 class="card-title">SWEETER FRANJAS</h3>
                         <p class="card-text"><strong>TALLES:</strong> S - M - L - XL</p>
                         <p class="card-text"><strong>MATERIAL:</strong> Lana</p>
                         <p class="card-text"><strong>PRECIO:</strong> $2400</p>
-                        <a href="#" class="btn boton">COMPRAR</a>
+                    <a href="#" class="button">comprar</a>
                     </div>
                 </div>
-                <div class="card producto" style="width: 18rem;">
-                    <a href="#">
-                        <img src="./../img/ropa/producto4.jpg" class="card-img-top producto__imagen" alt="Producto 4">
-                    </a>
-                    <div class="card-body producto__detalle">
+                <div class="card" style="width: 18rem;">
+                    <img src="./../img/ropa/producto4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
                         <h3 class="card-title">CALZA ENGOMADA</h3>
                         <p class="card-text"><strong>TALLES:</strong> S - M - L - XL</p>
                         <p class="card-text"><strong>MATERIAL:</strong> Goma</p>
                         <p class="card-text"><strong>PRECIO:</strong> $2000</p>
-                        <a href="#" class="btn boton">COMPRAR</a>
+                    <a href="#" class="button">comprar</a>
                     </div>
                 </div>
-                <div class="card producto" style="width: 18rem;">
-                    <a href="#">
-                        <img src="./../img/ropa/producto5.jpg" class="card-img-top producto__imagen" alt="Producto 5">
-                    </a>
-                    <div class="card-body producto__detalle">
+                <div class="card" style="width: 18rem;">
+                    <img src="./../img/ropa/producto5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
                         <h3 class="card-title">REMERA 3/4</h3>
                         <p class="card-text"><strong>TALLES:</strong> S - M - L - XL</p>
                         <p class="card-text"><strong>MATERIAL:</strong> Algodón</p>
                         <p class="card-text"><strong>PRECIO:</strong> $1700</p>
-                        <a href="#" class="btn boton">COMPRAR</a>
+                        <a href="#" class="button">comprar</a>
                     </div>
                 </div>
-                <div class="card producto" style="width: 18rem;">
-                    <a href="#">
-                        <img src="./../img/ropa/producto6.jpg" class="card-img-top producto__imagen" alt="Producto 6">
-                    </a>
-                    <div class="card-body producto__detalle">
+                <div class="card" style="width: 18rem;">
+                    <img src="./../img/ropa/producto6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
                         <h3 class="card-title">CHALECO MARRON</h3>
                         <p class="card-text"><strong>TALLES:</strong> S - M - L - XL</p>
                         <p class="card-text"><strong>MATERIAL:</strong> Lana</p>
                         <p class="card-text"><strong>PRECIO:</strong> $1900</p>
-                        <a href="#" class="btn boton">COMPRAR</a>
+                        <a href="#" class="button">comprar</a>
                     </div>
                 </div>
-                <div class="card producto" style="width: 18rem;">
-                    <a href="#">
-                        <img src="./../img/ropa/producto8.jpg" class="card-img-top producto__imagen" alt="Producto 7">
-                    </a>
-                    <div class="card-body producto__detalle">
+                <div class="card" style="width: 18rem;">
+                    <img src="./../img/ropa/producto8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
                         <h3 class="card-title">SACO BORDADO FLORES</h3>
                         <p class="card-text"><strong>TALLES:</strong> S - M - L - XL</p>
                         <p class="card-text"><strong>MATERIAL:</strong> Hilo</p>
                         <p class="card-text"><strong>PRECIO:</strong> $2350</p>
-                        <a href="#" class="btn boton">COMPRAR</a>
+                        <a href="#" class="button">comprar</a>
                     </div>
                 </div>
-                <div class="card producto" style="width: 18rem;">
-                    <a href="#">
-                        <img src="./../img/ropa/producto9.jpg" class="card-img-top producto__imagen" alt="Producto 8">
-                    </a>
-                    <div class="card-body producto__detalle">
+                <div class="card" style="width: 18rem;">
+                    <img src="./../img/ropa/producto9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
                         <h3 class="card-title">CAMISOLA BOTONES</h3>
                         <p class="card-text"><strong>TALLES:</strong> S - M - L - XL</p>
                         <p class="card-text"><strong>MATERIAL:</strong> Algodón</p>
                         <p class="card-text"><strong>PRECIO:</strong> $1790</p>
-                        <a href="#" class="btn boton">COMPRAR</a>
+                        <a href="#" class="button">comprar</a>
                     </div>
                 </div>
-                <div class="card producto" style="width: 18rem;">
-                    <a href="#">
-                        <img src="./../img/accesorios/WhatsApp Image 2021-06-03 at 22.34.03.jpeg" class="card-img-top producto__imagen" alt="Producto 8">
-                    </a>
-                    <div class="card-body producto__detalle">
+                <div class="card" style="width: 18rem;">
+                    <img src="./../img/ropa/producto10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
                         <h3 class="card-title">AROS MEDIANOS</h3>
                         <p class="card-text"><strong>MATERIAL:</strong> Acero quirúrgico</p>
                         <p class="card-text"><strong>PRECIO:</strong> $900</p>
-                        <a href="#" class="btn boton">COMPRAR</a>
+                        <a href="#" class="button">comprar</a>
                     </div>
                 </div>
-                <div class="card producto" style="width: 18rem;">
-                    <a href="#">
-                        <img src="./../img/accesorios/WhatsApp Image 2021-06-03 at 22.34.04.jpeg" class="card-img-top producto__imagen" alt="Producto 8">
-                    </a>
-                    <div class="card-body producto__detalle">
+                <div class="card" style="width: 18rem;">
+                    <img src="./../img/accesorios/WhatsApp Image 2021-06-03 at 22.34.03.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
                         <h3 class="card-title">AROS ALAS</h3>
                         <p class="card-text"><strong>MATERIAL:</strong> Enchapado en oro</p>
                         <p class="card-text"><strong>PRECIO:</strong> $1000</p>
-                        <a href="#" class="btn boton">COMPRAR</a>
+                        <a href="#" class="button">comprar</a>
                     </div>
                 </div>
-                <div class="card producto" style="width: 18rem;">
-                    <a href="#">
-                        <img src="./../img/accesorios/WhatsApp Image 2021-06-03 at 22.34.05 (1).jpeg" class="card-img-top producto__imagen" alt="Producto 8">
-                    </a>
-                    <div class="card-body producto__detalle">
+                <div class="card" style="width: 18rem;">
+                    <img src="./../img/accesorios/WhatsApp Image 2021-06-03 at 22.34.04.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
                         <h3 class="card-title">AROS DE MAR</h3>
                         <p class="card-text"><strong>MATERIAL:</strong> Acero quirúrgico</p>
                         <p class="card-text"><strong>PRECIO:</strong> $1100</p>
-                        <a href="#" class="btn boton">COMPRAR</a>
+                        <a href="#" class="button">comprar</a>
                     </div>
                 </div>
-                <div class="card producto" style="width: 18rem;">
-                    <a href="#">
-                        <img src="./../img/accesorios/WhatsApp Image 2021-06-03 at 22.34.05 (2).jpeg" class="card-img-top producto__imagen" alt="Producto 8">
-                    </a>
-                    <div class="card-body producto__detalle">
+                <div class="card" style="width: 18rem;">
+                    <img src="./../img/accesorios/WhatsApp Image 2021-06-03 at 22.34.05 (1).jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
                         <h3 class="card-title">HEBILLAS</h3>
                         <p class="card-text"><strong>MATERIAL:</strong> Acero quirúrgico</p>
                         <p class="card-text"><strong>PRECIO:</strong> $800</p>
-                        <a href="#" class="btn boton">COMPRAR</a>
+                        <a href="#" class="button">comprar</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./../img/accesorios/WhatsApp Image 2021-06-03 at 22.34.05 (2).jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="button">comprar</a>
                     </div>
                 </div>
             </div>
-        </main>
-        <!-- Fin Contenido principal-->
-        
-        <!-- Pie de pagina -->
-        <footer>
-            <div class="footer">
-                <div class="logo-footer">
-                    <a href="./../index.html"><img src="./../img/logo.png" alt="logo miTienda"></a>
-                </div>
-                <p class="text-footer">Todos los derechos reservados - 2021</p><!-- Copyright-->
-            </div>
-        </footer>
-        <!-- Fin Pie de pagina-->
-    </div>
+        </section>
+    </main>
+    <footer>
+        <div class="content-footer">
+                <a href="./../index.html"><img src="./../img/logo.png" alt="logo miTienda"></a>
+                <p class="text-footer">&nbsp;Todos los derechos reservados - 2021</p><!-- Copyright-->
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>

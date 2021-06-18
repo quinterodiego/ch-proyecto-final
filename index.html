@@ -2,126 +2,82 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Disfrutá la nueva colección de invierno 21! Jean,s blazers, bikers, camperas, camisas, remeras y sweaters son los protagonistas de esta temporada.">
     <meta name="keywords" content="tienda, ropa, camisas, calzado, indumentaria, jeans, denim, botas, abrigos, sweaters, sacos, montgomery, buzos, remeras, chombas, polos, camisetas, pantalones, borcegos, zapatos">
     <title>LERO LERO - Inicio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/estilos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <script src="https://kit.fontawesome.com/168160de4f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <!-- Icono Whatsapp -->
-        <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-        <!-- Icono Instagram -->
-        <a href="https://www.instagram.com/lerolero.store/?hl=es" target="_blank"><i class="fab fa-instagram instagram"></i></a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/logo.png" alt="">
+                <h1>LERO LERO STORE</h1>
+            </a>
 
-        <!-- Cabecera -->
-        <header>
-            <nav class="navbar navbar-light bg-light fixed-top">
-                <a class="navbar-brand" href="./index.html">
-                    <div class="navbar_logo">
-                        <img src="./img/logo.png" alt="">
-                    </div>
-                    <div class="navbar_brand--name">
-                        <h1>LERO LERO</h1>
-                        <p>Ropa & Accesorios</p>
-                    </div>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a href="./index.html"><b>INICIO</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./views/promos.html">PROMOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./views/productos.html">PRODUCTOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./views/ingresar.html">INGRESAR</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./views/nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./views/contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="menu-desktop">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="link-active" href="./index.html"><b>INICIO</b></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./views/promos.html">PROMOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./views/productos.html">PRODUCTO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./views/ingresar.html">INGRESAR</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./views/nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./views/contacto.html">CONTACTO</a>
-                        </li>
-                        <li class="nav-item cart">
-                            <a href="#">
-                                <i class="fas fa-cart-plus"><div class="prod-cart">2</div></i>                          
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="back-navbar"></div>
-            <!-- Fin Barra de navegacion -->
-        </header>
-        <!-- Fin Cabecera -->
-
-        <!-- Contenido principal -->
-        <main id="carouselExampleFade" class="main-vh-90 position-relative carousel slide carousel-fade back-cover"  data-ride="carousel" data-interval="4000">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/cover11.jpg" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/cover12.jpg" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/cover13.jpg" alt="...">
-                    </div>
-                </div>
-                <div class="promos-cover">
-                    <h2>Conoc&eacute; todas nuestras promos!</h2>
-                    <p>No te pierdas los descuentos en nuestras prendas y accesorios para esta temporada!</p>
-                    <a href="./views/promos.html"><button class="boton">QUIERO VER</button></a>
-                </div>
-        </main>
-        <!-- Fin Contenido principal-->
-
-        <!-- Pie de pagina -->
-        <footer>
-            <div class="footer">
-                <div class="logo-footer">
-                    <a href="index.html"><img src="./img/logo.png" alt="logo miTienda"></a>
-                </div>
-                <p class="text-footer">Todos los derechos reservados - 2021</p><!-- Copyright-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">INICIO<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./views/productos.html">PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./views/productos.html">INGRESAR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-cart-plus cart">
+                                <div class="prod-cart">2</div>
+                            </i>                         
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </footer>
-        <!-- Fin Pie de pagina-->
-    </div>
+        </nav>
+    </header>
+    <main>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade back-cover"  data-ride="carousel" data-interval="4000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/cover11.jpg" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/cover12.jpg" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/cover13.jpg" alt="...">
+                </div>
+            </div>
+            <div class="promos-cover">
+                <h2>Conoc&eacute; todas nuestras promos!</h2>
+                <p>No te pierdas los descuentos en nuestras prendas y accesorios para esta temporada!</p>
+                <a href="#"><button type="button" class="button">QUIERO VER</button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="content-footer">
+                <a href="index.html"><img src="./img/logo.png" alt="logo miTienda"></a>
+                <p class="text-footer">&nbsp;Todos los derechos reservados - 2021</p><!-- Copyright-->
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
