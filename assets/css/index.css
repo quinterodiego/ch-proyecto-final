@@ -15,7 +15,8 @@ body {
 h2 {
   color: #2D7CAD;
   margin: 0;
-  padding: 5px 0; }
+  padding: 15px 0;
+  text-align: center; }
 
 h3 {
   color: #2D7CAD;
@@ -41,10 +42,10 @@ h3 {
   display: flex;
   align-items: center; }
   .navbar .navbar-brand img {
-    width: 40px; }
+    width: 45px; }
   .navbar .navbar-brand h1 {
     color: #FB4F4F;
-    font-size: 20px;
+    font-size: 25px;
     margin: 0; }
 
 .navbar .navbar-toggler i {
@@ -98,41 +99,33 @@ h3 {
     margin: 0; }
 
 /********** INDEX **********/
-.content-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 0; }
-  .content-footer img {
-    width: 30px; }
-  .content-footer p {
-    margin: 0; }
-
-.carousel {
-  position: relative; }
-  .carousel .carousel-item img {
-    width: 100vw;
-    height: 90vh;
-    object-fit: cover; }
-  .carousel .promos-cover {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center; }
-    .carousel .promos-cover h2 {
-      color: white; }
-    .carousel .promos-cover p {
-      color: white;
-      text-align: center;
-      padding: 0 10px; }
+.content-index {
+  height: 70vh; }
+  .content-index .carousel {
+    position: relative; }
+    .content-index .carousel .carousel-item img {
+      width: 100vw;
+      height: 90vh;
+      object-fit: cover; }
+    .content-index .carousel .promos-cover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+      .content-index .carousel .promos-cover h2 {
+        color: white; }
+      .content-index .carousel .promos-cover p {
+        color: white;
+        text-align: center;
+        padding: 0 10px; }
 
 /********** PRODUCTS **********/
 .productos {
@@ -151,7 +144,7 @@ h3 {
 .login {
   height: 80vh; }
   .login .form-login {
-    height: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center; }
@@ -195,11 +188,18 @@ h3 {
 
 /********** CONTACT **********/
 .contact {
-  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .contact .form-group label {
-    color: #ffffff; }
-  .contact .form-group textarea {
-    height: 150px; }
+  @media only screen and (min-width: 992px) {
+    .contact {
+      height: 80vh; } }
+  .contact .form-contact {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .contact .form-contact .form-group label {
+      color: #ffffff; }
+    .contact .form-contact .form-group textarea {
+      height: 150px; }
