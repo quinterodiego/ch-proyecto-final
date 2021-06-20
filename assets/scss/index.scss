@@ -22,6 +22,14 @@ $desktop: 1201px;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     font-family: 'Josefin Sans', sans-serif;
     /* font-family: 'Raleway', sans-serif; */
@@ -282,4 +290,65 @@ h3 {
             }
         }
     }
+}
+
+/********** REDES **********/
+
+.whatsapp {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    top: 80px;
+    right: 10px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    font-size:20px;
+    z-index:100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (min-width: $desktop){
+        width:60px;
+        height:60px;
+    }
+    .whatsapp-icon {
+        @media only screen and (min-width: $desktop){
+            font-size: 35px;
+        }
+    }
+}
+
+.whatsapp:hover {
+    color: $white-color;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.instagram {
+    position:fixed;
+    width:40px;
+    height:40px;
+    top: 130px;
+    right:10px;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    color:#FFF;
+    border-radius:50px;
+    font-size:20px;
+    z-index:100;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (min-width: $desktop){
+        width:60px;
+        height:60px;
+        font-size: 35px;
+        top: 150px;
+    }
+}
+
+.instagram:hover {
+    color: $white-color;
+    text-decoration: none;
+    opacity: 0.7;
 }
