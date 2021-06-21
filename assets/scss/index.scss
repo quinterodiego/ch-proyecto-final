@@ -31,8 +31,8 @@ html {
 }
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    /* font-family: 'Raleway', sans-serif; */
+    // font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .container {
@@ -51,6 +51,10 @@ h3 {
     color: $second-color;
     margin: 0;
     padding: 5px 0;
+}
+
+p {
+    color: $text-color;
 }
 
 .button {
@@ -204,6 +208,10 @@ h3 {
         flex-wrap: wrap;
         .card{
             margin: 5px;
+            .price {
+                color: $second-color;
+                font-weight: 700;
+            }
         }
     }
 }
@@ -213,10 +221,14 @@ h3 {
 .login {
     height: 80vh;
     .form-login {
+        width: 300px;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media only screen and (min-width: $laptop){
+            width: 400px;
+        } 
         .form-group label {
             color: $white-color;
             margin: 0;
@@ -281,10 +293,14 @@ h3 {
     flex-direction: column;
     align-items: center;
     .form-contact {
+        width: 300px;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media only screen and (min-width: $laptop){
+            width: 400px;
+        } 
         .form-group {
             label {
                 color: $white-color;

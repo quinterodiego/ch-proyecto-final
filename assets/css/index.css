@@ -15,8 +15,7 @@ html {
   display: none; }
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  /* font-family: 'Raleway', sans-serif; */ }
+  font-family: 'Raleway', sans-serif; }
 
 .container {
   padding: 0 40px; }
@@ -31,6 +30,9 @@ h3 {
   color: #2D7CAD;
   margin: 0;
   padding: 5px 0; }
+
+p {
+  color: #808080; }
 
 .button {
   padding: 10px;
@@ -149,15 +151,22 @@ h3 {
     flex-wrap: wrap; }
     .productos .content-products .card {
       margin: 5px; }
+      .productos .content-products .card .price {
+        color: #2D7CAD;
+        font-weight: 700; }
 
 /********** LOGIN **********/
 .login {
   height: 80vh; }
   .login .form-login {
+    width: 300px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    @media only screen and (min-width: 992px) {
+      .login .form-login {
+        width: 400px; } }
     .login .form-login .form-group label {
       color: #ffffff;
       margin: 0; }
@@ -207,10 +216,14 @@ h3 {
     .contact {
       height: 80vh; } }
   .contact .form-contact {
+    width: 300px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    @media only screen and (min-width: 992px) {
+      .contact .form-contact {
+        width: 400px; } }
     .contact .form-contact .form-group label {
       color: #ffffff; }
     .contact .form-contact .form-group textarea {
